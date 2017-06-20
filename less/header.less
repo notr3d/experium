@@ -1,0 +1,76 @@
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: @white;
+  z-index: 100;
+  padding: 29px 0 23px;
+  &__wrapper {
+    .con();
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+  }
+  &__item {
+    &:last-child {
+      margin-left: auto;
+    }
+    &--logo {
+      padding-top: 8px;
+    }
+    &--nav {
+      margin-left: 50px;
+      padding-top: 10px;
+    }
+    &--contacts {
+      padding-top: 8px;
+      margin-left: 167px;
+    }
+  }
+}
+
+.header-nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding-bottom: 15px;
+  &__item {
+    &:not(:first-child){
+      margin-left: 29px;
+    }
+    a {
+      color: #000;
+    }
+  }
+}
+
+.header-contacts {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  &__item {
+    &:not(:first-child){
+      margin-left: 8px;
+    }
+    a {
+      color: #000;      
+    }
+    &--tel {
+      font-size: 22px;     
+      word-spacing: -2px;
+    }
+  }
+}
+
+.header-login {
+  .fancy-button {
+    font-size: 12px;
+  }
+}

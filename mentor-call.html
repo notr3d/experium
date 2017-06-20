@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Experium</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap-select.css" rel="stylesheet">
+	<link href="css/bootstrap-datepicker3.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="site">
+		<div class="page page--inner">
+			<div class="page__wrapper">
+				<header class="site-header">
+					<div class="site-header__wrapper">
+						<div class="site-header__item site-header__item--logo">
+							<div class="site-logo">
+								<a href="index.html">
+									<img src="img/site-logo.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="site-header__item site-header__item--nav">
+							<nav class="header-nav">
+								<div class="header-nav__item">
+									<a href="#">Менторы</a>
+								</div>
+								<div class="header-nav__item">
+									<a href="#">Эксперты</a>
+								</div>
+								<div class="header-nav__item">
+									<a href="#">Проекты</a>
+								</div>
+								<div class="header-nav__item">
+									<a href="#">Мероприятия</a>
+								</div>
+
+							</nav>
+						</div>
+						<div class="site-header__item site-header__item--contacts">
+							<div class="header-contacts">
+								<div class="header-contacts__item">
+									<a href="#">
+										<img src="img/whatsapp.png" alt="">
+									</a>
+								</div>
+								<div class="header-contacts__item">
+									<a href="#">
+										<img src="img/telegram.png" alt="">
+									</a>
+								</div>
+								<div class="header-contacts__item header-contacts__item--tel">
+									<a href="#">
+										<span>8 800 856-05-99</span>
+									</a>
+								</div>
+
+							</div>
+						</div>
+						<div class="site-header__item site-header__item--login">
+							<div class="header-login">
+								<a href="#" class="fancy-button">Войти</a>
+							</div>
+						</div>
+					</div>
+				</header>
+				<main class="site-content">
+					<div class="con">
+						<div class="breadcrumbs">
+							<div class="breadcrumbs__item">
+								<a href="#">Менторы</a>
+							</div>
+							<div class="breadcrumbs__item">
+								<a href="#">Павел Лаврентьев</a>
+							</div>
+							<div class="breadcrumbs__item">
+								<span>Онлайн звонок</span>
+							</div>
+						</div>
+						<div class="content">
+							<div class="content__main">
+								<div class="block">
+									<form name="call_request" method="post" action="/app_dev.php/account/quote/call/create" class="entity_form">
+										<h2 class="block__header">Информация</h2>
+										<input type="hidden" id="call_request_seller" name="call_request[seller]" value="13" />
+										<input type="hidden" id="call_request_targetUserType" name="call_request[targetUserType]" value="2" />
+										<div class="input-item">
+											<label for="call_request_description" class="required">Сообщение для ментора</label>
+											<textarea id="call_request_description" name="call_request[description]" required="required" placeholder="Сформулируйте задачу ментору, чтобы не тратить время звонка"></textarea>
+										</div>
+										<div class="input-item">
+											<label for="call_request_timeLength" class="required">Длительность звонка</label>
+											<select id="call_request_timeLength" name="call_request[timeLength]">
+												<option value="31">20 минут - 20 000 ₽</option>
+												<option value="32">30 минут - 30 000 ₽</option>
+												<option value="33">60 минут - 60 000 ₽</option>
+												<option value="31">20 минут - 20 000 ₽</option>
+												<option value="32">30 минут - 30 000 ₽</option>
+												<option value="33">60 минут - 60 000 ₽</option>
+												<option value="31">20 минут - 20 000 ₽</option>
+												<option value="32">30 минут - 30 000 ₽</option>
+												<option value="33">60 минут - 60 000 ₽</option>
+												<option value="31">20 минут - 20 000 ₽</option>
+												<option value="32">30 минут - 30 000 ₽</option>
+												<option value="33">60 минут - 60 000 ₽</option>
+												<option value="31">20 минут - 20 000 ₽</option>
+												<option value="32">30 минут - 30 000 ₽</option>
+												<option value="33">60 минут - 60 000 ₽</option>
+												<option value="31">20 минут - 20 000 ₽</option>
+												<option value="32">30 минут - 30 000 ₽</option>
+												<option value="33">60 минут - 60 000 ₽</option>
+												<option value="31">20 минут - 20 000 ₽</option>
+												<option value="32">30 минут - 30 000 ₽</option>
+												<option value="33">60 минут - 60 000 ₽</option>
+												<option value="31">20 минут - 20 000 ₽</option>
+												<option value="32">30 минут - 30 000 ₽</option>
+												<option value="33">60 минут - 60 000 ₽</option>
+												<option value="31">20 минут - 20 000 ₽</option>
+												<option value="32">30 минут - 30 000 ₽</option>
+												<option value="33">60 минут - 60 000 ₽</option>
+												<option value="31">20 минут - 20 000 ₽</option>
+												<option value="32">30 минут - 30 000 ₽</option>
+												<option value="33">60 минут - 60 000 ₽</option>
+												
+											</select>
+											<div class="input-item__note">
+												<p>Стоимость звонка 20 000 ₽ за выбранную длительность. Если вызов превысит длительность, вы оплатите дополнительное время в размере 1 000 ₽ / мин. Если вызов идет меньше заказанной длительности, то разница будет возвращена на  баланс.</p>
+											</div>
+										</div>
+										<div id="call_request_buyer" class="input-group">
+											<div class="input-item">
+												<label for="call_request_buyer_username" class="required">Ваше имя</label>
+												<input type="text" id="call_request_buyer_username" name="call_request[buyer][username]" required="required" placeholder="Иван Иванов"/>
+											</div>
+											<div class="input-item">
+												<label for="call_request_buyer_email" class="required">E-mail</label>
+												<input type="email" id="call_request_buyer_email" name="call_request[buyer][email]" required="required" placeholder="pifagor@gmail.com"/>
+												<div class="input-item__note">
+													<p>На данный емаил вам придет ссылка на онлайн конференцию и код доступа</p>
+												</div>
+											</div>
+											<div class="input-item">
+												<label for="call_request_buyer_phone" class="required">Номер телефона</label>
+												<input type="text" id="call_request_buyer_phone" name="call_request[buyer][phone]" required="required" placeholder="+7 (000) 000-00-00"/>
+												<div class="input-item__note">
+													<p>Телефон используется для уведомлений и связи с службой поддержки</p>
+												</div>
+											</div>
+										</div>
+										<h2 class="block__header">Удобное время для беседы, несколько вариантов</h2>
+										<div class="input-group">
+											<div id="call_request_selectedTimes">
+												<div id="call_request_selectedTimes_0" class="time">
+													<div>
+														<div id="call_request_selectedTimes_0_value" class="input-item input-item--date-time">
+															<input type="text" class="datepicker" placeholder="20/06/2017">
+<!--															<input type="date" id="call_request_selectedTimes_0_value_date" name="call_request[selectedTimes][0][value][date]" required="required" value="2017-10-01" />-->
+<!--															<input type="time" id="call_request_selectedTimes_0_value_time" name="call_request[selectedTimes][0][value][time]" required="required" value="19:00" />-->
+															<select name="" id="">
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div id="call_request_selectedTimes_1" class="time">
+													<div>
+														<div id="call_request_selectedTimes_1_value" class="input-item input-item--date-time">
+															<input type="text" class="datepicker" placeholder="20/06/2017">
+<!--															<input type="date" id="call_request_selectedTimes_1_value_date" name="call_request[selectedTimes][1][value][date]" required="required" value="2017-10-01" />-->
+<!--															<input type="time" id="call_request_selectedTimes_1_value_time" name="call_request[selectedTimes][1][value][time]" required="required" value="19:00" />-->
+															<select name="" id="">
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div id="call_request_selectedTimes_2" class="time">
+													<div>
+														<div id="call_request_selectedTimes_2_value" class="input-item input-item--date-time">
+															<input type="text" class="datepicker" placeholder="20/06/2017">
+<!--															<input type="date" id="call_request_selectedTimes_2_value_date" name="call_request[selectedTimes][2][value][date]" required="required" value="2017-10-01" />-->
+<!--															<input type="time" id="call_request_selectedTimes_2_value_time" name="call_request[selectedTimes][2][value][time]" required="required" value="19:00" />-->
+															<select name="" id="">
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+																<option value="17:30">17:30</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="input-item">
+											<label for="call_request_timezone" class="required">Часовой пояс</label>
+											<select id="call_request_timezone" name="call_request[timezone]">	
+												<option value="3" selected="selected">(GMT+3) Москва</option>
+											</select>
+										</div>
+										<div class="form-footer">
+											<button type="submit" id="call_request_save" name="call_request[save]" class="save fancy-button fancy-button--full fancy-button--purple">Забронировать звонок и перейти к оплате</button>
+											<div class="form-footer__note">Отправляя заявку, подтверждаю ознакомление и согласие <a href="#">с Условиями использования</a> полностью</div>
+										</div>
+										<input type="hidden" id="call_request__token" name="call_request[_token]" value="nZn13Ov6rQDskbK4J57qz8ZuxYYjUTA1c0yyAL_P9l4"/>
+									</form>
+								</div>
+							</div>
+							<div class="content__aside">
+								<div class="people-item">
+									<a href="#" class="people__inner">
+										<div class="people__pic">
+											<img src="pic/people/1.jpg" alt="">
+										</div>
+										<div class="people__text">
+											<div class="people__name">Павел Лаврентьев</div>
+											<div class="people__position">Яндекс</div>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</main>
+				<footer class="site-footer">
+					<div class="social">
+						<div class="social__wrapper">
+							<h2 class="social__header">Присоединяйтесь к нам в социальных сетях!</h2>
+							<div class="social__container">
+								<div class="social__item social__item--fb">
+									<a href="#">Facebook</a>
+								</div>
+								<div class="social__item social__item--vk">
+									<a href="#">Vkontakte</a>
+								</div>
+								<div class="social__item social__item--tw">
+									<a href="#">Twitter</a>
+								</div>
+								<div class="social__item social__item--in">
+									<a href="#">LinkedIn</a>
+								</div>
+								<div class="social__item social__item--ig">
+									<a href="#">Instagram</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="site-footer__wrapper">
+						<div class="site-footer__item site-footer__item--logo">
+							<div class="site-logo">
+								<a href="index.html">
+									<img src="img/site-logo.png" alt="">
+								</a>
+							</div>
+						</div>
+						<div class="site-footer__item site-footer__item--nav">
+							<nav class="footer-nav">
+								<div class="footer-nav__item">
+									<a href="#">Условия использования</a>
+								</div>
+								<div class="footer-nav__item">
+									<a href="#">Как это работает</a>
+								</div>
+								<div class="footer-nav__item">
+									<a href="#">СМИ о нас</a>
+								</div>
+								<div class="footer-nav__item">
+									<a href="#">Вопросы и ответы</a>
+								</div>
+								<div class="footer-nav__item">
+									<a href="#">Контакты</a>
+								</div>
+
+							</nav>
+						</div>
+						<div class="site-footer__item site-footer__item--copy">
+							<div class="copy">© 2017 <a href="#">buro.com</a></div>
+						</div>
+					</div>
+				</footer>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-3.2.1.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap-select.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/script.js"></script>
+</body>
+</html>

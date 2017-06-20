@@ -1,0 +1,132 @@
+.site-footer {
+  background: @light-grey;
+  &__wrapper {
+    .con();
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    padding: 32px 0 26px;
+  }
+  &__item {
+    &:last-child {
+      margin-left: auto;
+    }
+    &--logo {
+      margin-right: 60px;
+    }
+    &--nav {
+      padding-top: 5px;
+    }
+    &--copy {
+      padding-top: 7px;
+    }
+  }
+}
+
+.footer-nav {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 31px;
+    }
+    a {
+      color: @black;
+      font-size: 14px;
+    }
+  }
+}
+
+.copy {
+  font-size: 12px;
+  color: #808080;
+  a {
+    color: #808080;
+  }
+}
+
+.social {
+	background: @white;
+	border-top: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
+  &__wrapper {
+    .con();
+    padding: 36px 0 46px;
+  }
+  &__header {
+    font-size: 28px;
+    text-align: center;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  &__container {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    margin: 0 -9px;
+  }
+  &__item {
+    flex-basis: 20%;
+    padding: 0 9px;
+    a {
+      border: 1px solid #ebebeb;
+      display: block;
+      padding: 12px 0;
+      text-align: center;
+      color: #7d7d7d;
+      font-size: 12px;
+      text-transform: uppercase;
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 22px;
+        height: 23px;
+        margin-right: 13px;
+        vertical-align: bottom;
+      }
+    }
+    &--fb {
+      a {
+        &::before {
+          background-image: url(../img/social/fb.png);
+        }
+      }
+    }
+    &--vk {
+      a {
+        &::before {
+          background-image: url(../img/social/vk.png);
+        }
+      }
+    }
+    &--tw {
+      a {
+        &::before {
+          background-image: url(../img/social/tw.png);
+        }
+      }
+    }
+    &--in {
+      a {
+        &::before {
+          background-image: url(../img/social/in.png);
+        }
+      }
+    }    
+    &--ig {
+      a {
+        &::before {
+          background-image: url(../img/social/ig.png);
+        }
+      }
+    }
+  }
+}
